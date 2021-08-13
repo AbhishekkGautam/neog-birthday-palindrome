@@ -146,7 +146,7 @@ function checkBtnHandler() {
     };
     let isPalindrome = checkPalindromeForAllFormats(date);
     outputEl.innerHTML = `
-		<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_UBA69g.json"  background="transparent"  speed="1"  style="width: 300px; height: 150px;"   autoplay></lottie-player>
+		<lottie-player src="https://assets3.lottiefiles.com/datafiles/aba45c7b75d547282b2dbdc97969412b/progress_bar.json"  background="transparent"  speed="1"  style="width: 300px; height: 120px;" loop  autoplay></lottie-player>
 		<p>We are processing the result...</p>
 	`;
     setTimeout(() => {
@@ -156,7 +156,7 @@ function checkBtnHandler() {
         let [count, nextDate] = getNextPalindromeDate(date);
         outputEl.innerText = ` Awww! Your birthdate is not palindrome. 😞 Nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}. You missed it by ${count} days.`;
       }
-    }, 5000);
+    }, 4000);
   }
 }
 
