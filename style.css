@@ -27,13 +27,13 @@ p {
 }
 
 h1 {
-  color: #154fca;
+  color: var(--primary-color);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 63%;
   margin: auto;
   margin-top: 4rem;
 }
@@ -74,8 +74,8 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid #6797ff;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+  /* border: 1px solid #6797ff; */
 }
 
 .footer {
