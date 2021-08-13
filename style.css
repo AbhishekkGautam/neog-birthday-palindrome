@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #3b82f6;
+  --dark-gray: #6b7280;
+  --white: #f7fbfb;
+  --dark-blue: #1e3a8a;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
+  background-color: var(--white);
+  position: relative;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+  margin-top: 3.5rem;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  color: #5b54fa;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(to right, #3e7bff, #5b54fa);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right, #3e7bff, #3e7bff);
+}
+
+#output {
+  /* background-color: white; */
+  padding: 1rem;
+  margin: auto;
+  margin-top: 4rem;
+  width: 60%;
+  min-height: auto;
+  /* text-align: center; */
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.8rem;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.footer a {
+  color: dodgerblue;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 50%;
+    margin-top: 4rem;
+  }
+  .form {
+    width: 90%;
+  }
+  #output {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .form {
+    width: 90%;
+    margin-top: 3rem;
+  }
+  #output {
+    width: 90%;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+  button {
+    margin-top: 1rem;
+  }
+  .footer {
+    margin-top: 120px;
+  }
+}
