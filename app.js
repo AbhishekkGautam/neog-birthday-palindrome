@@ -154,9 +154,14 @@ function checkBtnHandler() {
         outputEl.innerText = "Yay! your birthday is a palindrome. 🎉";
       } else {
         let [count, nextDate] = getNextPalindromeDate(date);
-        outputEl.innerText = ` Awww! Your birthdate is not palindrome. 🙁 Nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}. You missed it by ${count} days.`;
+        outputEl.innerText = ` Oh! Your birthdate is not palindrome. 🙁 Nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}. You missed it by ${count} days.`;
       }
     }, 4000);
+  } else {
+    outputEl.innerHTML = `
+	 	<p style="color: 
+#EF4444;">Enter valid date to continue.</p> 
+	  `;
   }
 }
 
